@@ -7,8 +7,9 @@ var config = require('.././config.json')[app.get('env')];
 var unirest = require('unirest');
 var base_url = "https://connect.squareup.com/v2";
 
+
 // data store for product cost
-var product_cost = {"001": 100, "002": 4900, "003": 500000} 
+var product_cost = {"001": 1, "002": 2, "003": 10, "004": 50, "005": 100} 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -35,7 +36,7 @@ router.post('/charges/charge_card', function(req,res,next){
 
 	  //Make sure amount is a valid integer
 	  var amount = product_cost[request_params.product_id]
-	  
+
 	  request_body = {
 	  	card_nonce: request_params.nonce,
 	  	amount_money: {
