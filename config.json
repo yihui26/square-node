@@ -1,0 +1,10 @@
+{
+  "development": {
+    "squareApplicationId": "sandbox-sq0idp-sp34gmRB3Q2ri_BlpVCXUg", // sd
+    "squareAccessToken": "sandbox-sq0atb-7YwbUgRwQHyMoNoNL1Laeg"
+  },
+  "production": {
+    "squareApplicationId": "prod-application-id-here",
+    "squareAccessToken": "prod-access-token-here"
+  }
+}
